@@ -17,6 +17,7 @@
     text-decoration: none;
     text-transform: capitalize;
     box-sizing: border-box;
+    transition: 0.2s linear;
 }
 html{
     font-size: 62.5;
@@ -25,10 +26,59 @@ html{
 
 }
 html::-webkit-scrollbar{
-
+width:0.8rem;
 }
+
 body{
    background: var(--bg);
    color: var(--white);
     
+}
+section{
+    padding: 2rem 7%;
+}
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem; /*35px*/
+}
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase;    
+}
+.btn{
+    margin-top: 1rem;
+    display:inline-block;
+    padding:0.9rem 3rem;
+    font-size: 1.7rem;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: var(--white);
+    color: var(--main-color);
+}
+header{
+    background-color: var(--bg);
+    border-bottom: var(--border);
+    display: flex;
+    padding:1.5rem 7%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left:0;
+}
+header .logo img{
+    height:6rem;
+}
+header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+}
+header .navbar a:hover{
+    color:var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
 }
